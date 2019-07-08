@@ -13,6 +13,8 @@
 		0C8B702E22D39DE500B84F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8B702C22D39DE500B84F1D /* LaunchScreen.storyboard */; };
 		0C8B703F22D39EF900B84F1D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8B703E22D39EF900B84F1D /* CloudKit.framework */; };
 		0C8B704122D39FC200B84F1D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B704022D39FC200B84F1D /* Message.swift */; };
+		0C8B704322D3A65E00B84F1D /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B704222D3A65E00B84F1D /* MessageController.swift */; };
+		0C8B704622D3A7E200B84F1D /* CloudKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B704522D3A7E200B84F1D /* CloudKitController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		0C8B703C22D39EEE00B84F1D /* BulletinBoardCK27.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BulletinBoardCK27.entitlements; sourceTree = "<group>"; };
 		0C8B703E22D39EF900B84F1D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		0C8B704022D39FC200B84F1D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0C8B704222D3A65E00B84F1D /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		0C8B704522D3A7E200B84F1D /* CloudKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		0C8B703722D39E2800B84F1D /* CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
+				0C8B704422D3A7CA00B84F1D /* Helpers+Extensions */,
 				0C8B703B22D39E5500B84F1D /* MODEL CONTROLLERS */,
 				0C8B703A22D39E4E00B84F1D /* VIEW CONTROLLERS */,
 			);
@@ -122,6 +127,7 @@
 		0C8B703B22D39E5500B84F1D /* MODEL CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
+				0C8B704222D3A65E00B84F1D /* MessageController.swift */,
 			);
 			path = "MODEL CONTROLLERS";
 			sourceTree = "<group>";
@@ -132,6 +138,14 @@
 				0C8B703E22D39EF900B84F1D /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C8B704422D3A7CA00B84F1D /* Helpers+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0C8B704522D3A7E200B84F1D /* CloudKitController.swift */,
+			);
+			path = "Helpers+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8B702422D39DE400B84F1D /* AppDelegate.swift in Sources */,
+				0C8B704322D3A65E00B84F1D /* MessageController.swift in Sources */,
+				0C8B704622D3A7E200B84F1D /* CloudKitController.swift in Sources */,
 				0C8B704122D39FC200B84F1D /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
