@@ -15,6 +15,8 @@
 		0C8B704122D39FC200B84F1D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B704022D39FC200B84F1D /* Message.swift */; };
 		0C8B704322D3A65E00B84F1D /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B704222D3A65E00B84F1D /* MessageController.swift */; };
 		0C8B704622D3A7E200B84F1D /* CloudKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B704522D3A7E200B84F1D /* CloudKitController.swift */; };
+		0C8B704822D3B1B500B84F1D /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B704722D3B1B500B84F1D /* MessageListViewController.swift */; };
+		0C8B704A22D3B40E00B84F1D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B704922D3B40E00B84F1D /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		0C8B704022D39FC200B84F1D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0C8B704222D3A65E00B84F1D /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		0C8B704522D3A7E200B84F1D /* CloudKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitController.swift; sourceTree = "<group>"; };
+		0C8B704722D3B1B500B84F1D /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		0C8B704922D3B40E00B84F1D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		0C8B703A22D39E4E00B84F1D /* VIEW CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
+				0C8B704722D3B1B500B84F1D /* MessageListViewController.swift */,
 			);
 			path = "VIEW CONTROLLERS";
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				0C8B704522D3A7E200B84F1D /* CloudKitController.swift */,
+				0C8B704922D3B40E00B84F1D /* DateExtension.swift */,
 			);
 			path = "Helpers+Extensions";
 			sourceTree = "<group>";
@@ -228,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8B702422D39DE400B84F1D /* AppDelegate.swift in Sources */,
+				0C8B704A22D3B40E00B84F1D /* DateExtension.swift in Sources */,
+				0C8B704822D3B1B500B84F1D /* MessageListViewController.swift in Sources */,
 				0C8B704322D3A65E00B84F1D /* MessageController.swift in Sources */,
 				0C8B704622D3A7E200B84F1D /* CloudKitController.swift in Sources */,
 				0C8B704122D39FC200B84F1D /* Message.swift in Sources */,

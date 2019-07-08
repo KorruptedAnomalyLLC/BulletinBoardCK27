@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Message List View Controller-->
         <scene sceneID="sIt-zf-2jT">
             <objects>
-                <viewController id="mgA-R7-9ff" sceneMemberID="viewController">
+                <viewController id="mgA-R7-9ff" customClass="MessageListViewController" customModule="BulletinBoardCK27" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aCv-2N-hew">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1jD-BQ-cFI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messageCell" id="1jD-BQ-cFI">
                                         <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1jD-BQ-cFI" id="5Gi-7m-SlP">
@@ -62,8 +62,16 @@
                         <viewLayoutGuide key="safeArea" id="7dm-vD-pqv"/>
                     </view>
                     <navigationItem key="navigationItem" id="p3a-4m-TSW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tKP-si-Lug"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tKP-si-Lug">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="mgA-R7-9ff" id="Qod-xW-xBh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="NBS-h8-kni" id="Gt6-7r-dC5"/>
+                        <outlet property="textField" destination="aCp-vn-eXC" id="cZh-PX-k4H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rq9-VT-QPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
